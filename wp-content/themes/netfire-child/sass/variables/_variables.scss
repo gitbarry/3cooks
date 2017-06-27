@@ -14,7 +14,7 @@ $red: #cc0000;
 /* BODY STYLES */
 $body__font: 'Hind', sans-serif;
 $body__font-size: em(16);
-$body__font-color: $grey;
+$body__font-color: black;
 $body__line-height: 150%;
 $body__margin: 0;
 $body__link-color: $theme__color;
@@ -28,8 +28,8 @@ $space: 1em;
 $gradient-top: #555;
 $gradient-bottom: #888;
 $border__color: $lighter-grey;
-$body__background-color: $white;
-$header__background-color: indigo;
+$body__background-color: $dark-grey;
+$header__background-color: white;
 $content__background-color: white;
 $icon__background-color: $theme__color;
 
@@ -51,9 +51,11 @@ $main-nav__font-size: rem(18.5);
 $main-nav__padding: .75em 1em;
 
 $footer__color: $grey;
-$footer__background-color: $dark-grey;
+$page-footer__background-color: $dark-grey;
 $footer-nav__color: $footer__color;
 $footer-nav__color-hover: white;
+
+$page-footer__background-color: $dark-grey;
 
 $card-nav__color: $body__link-color;
 $card-nav__color-hover: $body__link-color-hover;

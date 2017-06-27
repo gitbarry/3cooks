@@ -5,7 +5,7 @@
     @include container();
     padding: $space;
       @inclue breakpoint($desktop) {
-      padding: $space 0;
+      padding: 0;
     }
 
     .page-header__left {

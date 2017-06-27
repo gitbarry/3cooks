@@ -1,3 +1,7 @@
+body {
+  color: #000;
+}
+
 h1, h2, h3, h4, h5 {
   font-weight: normal;
 }
@@ -18,9 +22,9 @@ h4 {
   font-size: $heading__h4-font-size;
 }
 
-h2.page__title {
+h1.entry-title {
   line-height: $space;
-  margin: 0 0 .75em;
+  margin: 0;
 }
 
 .font__large {

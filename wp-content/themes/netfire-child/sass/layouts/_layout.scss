@@ -1,32 +1,17 @@
-.container {
-  @include breakpoint($desktop) {
-    @include container();
-  }
-}
-
-header.header {
-  .header__inner {
-    @include breakpoint($tablet) {
+.page-content {
+  background: white;
+  .page-content__inner {
+    @include breakpoint($desktop) {
       @include container();
-    }
-    .header__inner-left {
-      @include susy-breakpoint($tablet, $susy-24) {
-        @include span(10 of 24 first);
-      }
-    }
-    .header__inner-right {
-      @include susy-breakpoint($tablet, $susy-24) {
-        @include span(14 of 24 last);
-      }
+      @include susy-clearfix;
+      padding-top: 2em;
     }
   }
 }
 
-.man-nav__inner {
-  @include breakpoint($desktop) {
-    @include container();
-  }
-}
+
+
+
 
 .content-wrapper {
   @include susy-clearfix();
@@ -37,7 +22,7 @@ header.header {
     }
 }
 
-.content__left {
+.page-content__left {
   @include breakpoint($tablet) {
     @include span(7 first);
   }
@@ -46,7 +31,7 @@ header.header {
   }
 }
 
-.content__right {
+.page-content__right {
   @include breakpoint($tablet) {
     @include span(5 last);
   }
@@ -145,37 +130,8 @@ header.header {
   }
 }
 
-.grid-pagination {
-  .col__left {
-    @include breakpoint($tablet) {
-      @include span(2 first);
-    }
-  }
-
-  .col__mid {
-    @include breakpoint($tablet) {
-      @include span(8);
-    }
-  }
-
-  .col__right {
-    @include breakpoint($tablet) {
-      @include span(2 last);
-    }
-  }
-}
 
 
-footer {
-  .footer__inner {
-    @include breakpoint($desktop) {
-      @include container();
-    }
-  }
-}
-
-.content {
-}
 
 .clearfix {
   @include clearfix();

@@ -2,7 +2,7 @@
   @include susy-clearfix();
   background: $main-nav__background-color;
 
-  .menu {
+  .menu-main-menu-container {
     @include breakpoint($tablet-landscape) {
       @include container();
     }

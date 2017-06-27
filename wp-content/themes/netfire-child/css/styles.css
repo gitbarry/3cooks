@@ -302,28 +302,28 @@ cite {
   display: table;
   clear: both; }
 
-.page-header {
-  background: indigo; }
-  .page-header .page-header__inner {
+.site-header {
+  background: orange; }
+  .site-header .page-header__inner {
     max-width: 1160px;
     margin-left: auto;
     margin-right: auto;
     padding: 1em; }
-    .page-header .page-header__inner:after {
+    .site-header .page-header__inner:after {
       content: " ";
       display: block;
       clear: both; }
 
 @inclue breakpoint($desktop) {
-  .page-header .page-header__inner {
+  .site-header .page-header__inner {
     padding: 1em 0; } }
     @media (min-width: 768px) {
-      .page-header .page-header__inner .page-header__left {
+      .site-header .page-header__inner .page-header__left {
         width: 23.40426%;
         float: left;
         margin-right: 2.12766%; } }
     @media (min-width: 768px) {
-      .page-header .page-header__inner .page-header__right {
+      .site-header .page-header__inner .page-header__right {
         width: 74.46809%;
         float: right;
         margin-right: 0;

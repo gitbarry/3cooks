@@ -23,54 +23,46 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
-    <a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'twentyfifteen' ); ?></a>
 
-    <div id="sidebar" class="sidebar">
-        <header id="masthead" class="site-header" role="banner">
-            <div class="site-branding">
-                <?php
-                twentyfifteen_the_custom_logo();
 
-                if ( is_front_page() && is_home() ) : ?>
-                    <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-                <?php else : ?>
-                    <p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
-                <?php endif;
+<header id="masthead" class="page-header">
+    <div class="page-header__inner">
+        <div class="page-header__left">
+            <?php
+            twentyfifteen_the_custom_logo();
 
-                $description = get_bloginfo( 'description', 'display' );
-                if ( $description || is_customize_preview() ) : ?>
-                    <p class="site-description"><?php echo $description; ?></p>
-                <?php endif;
-                ?>
-                <button class="secondary-toggle"><?php _e( 'Menu and widgets', 'twentyfifteen' ); ?></button>
-            </div><!-- .site-branding -->
-        </header><!-- .site-header -->
+            if ( is_front_page() && is_home() ) : ?>
+                <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+            <?php else : ?>
+                <p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+            <?php endif;
 
-        <?php get_sidebar(); ?>
-    </div><!-- .sidebar -->
+            $description = get_bloginfo( 'description', 'display' );
+            if ( $description || is_customize_preview() ) : ?>
+                <p class="site-description"><?php echo $description; ?></p>
+            <?php endif;
+            ?>
+        </div>
 
-    <div id="content" class="site-content">
+        <div class="page-header__right">
 
-<!--    <!-- header -->-->
-<!--    <header class="page-header">-->
-<!--        <div class="page-header__inner">-->
-<!---->
-<!--            <div class="page-header__left">-->
-<!--                <div class="page-header__logo">-->
-<!--                    <a href="--><?php //echo home_url(); ?><!--">-->
-<!--                        <!-- svg logo - toddmotto.com/mastering-svg-use-for-a-retina-web-fallbacks-with-png-script -->-->
-<!--                        <img src="--><?php //echo get_template_directory_uri(); ?><!--/img/logo.svg" alt="Logo" class="logo-img">-->
-<!--                    </a>-->
-<!--                </div>-->
-<!--            </div>-->
-<!---->
-<!--            <div class="page-header__right">-->
-<!--                <h1>Three Cooks</h1>-->
-<!--            </div>-->
-<!---->
-<!--</div>-->
-<!--    </header>-->
-<!--    <!-- /header -->-->
-<!--    <nav class="main-navigation">-->
-<!--        --><?php //html5blank_nav(); ?>
-<!--    </nav>-->
+        </div>
+    </div>
+</header><!-- .site-header -->
+
+    <?php if ( has_nav_menu( 'primary' ) ) : ?>
+        <nav id="site-navigation" class="main-navigation" role="navigation">
+            <?php
+            // Primary navigation menu.
+            wp_nav_menu( array(
+                'menu_class'     => 'nav-menu',
+                'theme_location' => 'primary',
+            ) );
+            ?>
+        </nav><!-- .main-navigation -->
+    <?php endif; ?>
+
+
+<div id="content" class="page-content">
+    <div id="content" class="page-content__inner">
+
