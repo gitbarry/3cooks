@@ -1,0 +1,22 @@
+html,
+body {
+  font-size: 1em;
+}
+a,
+a:hover {
+  text-decoration: none;
+}
+
+h2 {
+  color: $heading__font-color;
+}
+
+h3 {
+  color: $heading__font-color;
+  font-weight: bold;
+}
+
+cite {
+  display: block;
+  margin-bottom: em(16);
+}

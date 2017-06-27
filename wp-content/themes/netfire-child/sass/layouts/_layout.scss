@@ -1,0 +1,182 @@
+.container {
+  @include breakpoint($desktop) {
+    @include container();
+  }
+}
+
+header.header {
+  .header__inner {
+    @include breakpoint($tablet) {
+      @include container();
+    }
+    .header__inner-left {
+      @include susy-breakpoint($tablet, $susy-24) {
+        @include span(10 of 24 first);
+      }
+    }
+    .header__inner-right {
+      @include susy-breakpoint($tablet, $susy-24) {
+        @include span(14 of 24 last);
+      }
+    }
+  }
+}
+
+.man-nav__inner {
+  @include breakpoint($desktop) {
+    @include container();
+  }
+}
+
+.content-wrapper {
+  @include susy-clearfix();
+    .main-content {
+      @include breakpoint($tablet-landscape) {
+        @include container();
+      }
+    }
+}
+
+.content__left {
+  @include breakpoint($tablet) {
+    @include span(7 first);
+  }
+  @include breakpoint($desktop) {
+    @include span(8 first);
+  }
+}
+
+.content__right {
+  @include breakpoint($tablet) {
+    @include span(5 last);
+  }
+  @include breakpoint($desktop) {
+    @include span(4 last);
+  }
+}
+
+.grid-5050 {
+  @include clearfix;
+  .content__left {
+    @include breakpoint($tablet) {
+      @include span(6 first);
+    }
+    @include breakpoint($desktop) {
+      @include span(6 first);
+    }
+  }
+
+  .content__right {
+    @include breakpoint($tablet) {
+      @include span(6 last);
+    }
+    @include breakpoint($desktop) {
+      @include span(6 last);
+    }
+  }
+}
+
+.grid-996 {
+  @include clearfix;
+
+  .grid-996-content__left {
+    @include breakpoint($tablet) {
+      @include span(6 first);
+    }
+    @include breakpoint($tablet-landscape) {
+      @include span(6 first);
+    }
+    @include susy-breakpoint($desktop, $susy-24) {
+      @include span(9 first);
+    }
+  }
+
+  .grid-996-content__mid {
+    @include breakpoint($tablet) {
+      @include span(6 last);
+    }
+    @include breakpoint($tablet-landscape) {
+      @include span(6 first);
+    }
+    @include susy-breakpoint($desktop, $susy-24) {
+      @include span(9 first);
+    }
+  }
+
+  .grid-996-content__right {
+    @include breakpoint($tablet) {
+      clear: both;
+    }
+    @include breakpoint($tablet-landscape) {
+      @include span(6 last);
+    }
+    @include susy-breakpoint($desktop, $susy-24) {
+      @include span(6 last);
+    }
+  }
+}
+
+.grid-4080 {
+  .content__left {
+    @include breakpoint($tablet) {
+      @include span(3 first);
+    }
+    @include breakpoint($desktop) {
+      @include span(4 first);
+    }
+  }
+
+  .content__right {
+    @include breakpoint($tablet) {
+      @include span(9 last);
+    }
+    @include breakpoint($desktop) {
+      @include span(8 last);
+    }
+  }
+}
+
+.grid-333 {
+  @include clearfix;
+  .col {
+    @include breakpoint($tablet) {
+      @include gallery(4);
+    }
+  }
+}
+
+.grid-pagination {
+  .col__left {
+    @include breakpoint($tablet) {
+      @include span(2 first);
+    }
+  }
+
+  .col__mid {
+    @include breakpoint($tablet) {
+      @include span(8);
+    }
+  }
+
+  .col__right {
+    @include breakpoint($tablet) {
+      @include span(2 last);
+    }
+  }
+}
+
+
+footer {
+  .footer__inner {
+    @include breakpoint($desktop) {
+      @include container();
+    }
+  }
+}
+
+.content {
+}
+
+.clearfix {
+  @include clearfix();
+}

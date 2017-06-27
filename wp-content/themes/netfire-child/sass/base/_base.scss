@@ -1,0 +1,25 @@
+body {
+  font-family: $body__font;
+  background: $body__background-color;
+  line-height: $body__line-height;
+  margin: $body__margin;
+}
+
+a {
+  color: $body__link-color;
+    &:hover {
+      color: $body__link-color-hover;
+    }
+}
+a.button {
+  &:hover {
+    color: $white;
+  }
+}
+
+ul, ol {
+  margin-left: 0;
+    li {
+      margin-left: 0;
+    }
+}

@@ -1,0 +1,24 @@
+.page-header {
+  background: $header__background-color;
+
+  .page-header__inner {
+    @include container();
+    padding: $space;
+      @inclue breakpoint($desktop) {
+      padding: $space 0;
+    }
+
+    .page-header__left {
+      @include breakpoint($tablet) {
+        @include span(3 of 12 first);
+      }
+    }
+
+    .page-header__right {
+      @include breakpoint($tablet) {
+        @include span(9 of last);
+        text-align: right;
+      }
+    }
+  }
+}

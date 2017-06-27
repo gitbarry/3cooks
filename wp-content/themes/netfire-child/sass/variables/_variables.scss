@@ -1,0 +1,75 @@
+/* Miscellaneous */
+$space: em(16);
+
+/* COLORS */
+$theme__color: green;
+$grey-dark: #333;
+$dark-grey: #333;
+$grey: #666;
+$light-grey: #999;
+$lighter-grey: #ccc;
+$white: #FFFFFF;
+$red: #cc0000;
+
+/* BODY STYLES */
+$body__font: 'Hind', sans-serif;
+$body__font-size: em(16);
+$body__font-color: $grey;
+$body__line-height: 150%;
+$body__margin: 0;
+$body__link-color: $theme__color;
+$body__link-color-hover: $dark-grey;
+
+$space: 1em;
+
+/* BlOCK COLOURS */
+
+
+$gradient-top: #555;
+$gradient-bottom: #888;
+$border__color: $lighter-grey;
+$body__background-color: $white;
+$header__background-color: indigo;
+$content__background-color: white;
+$icon__background-color: $theme__color;
+
+$cards__header-background-color: $grey-dark;
+$cards__border-color: #999;
+$cards__header--color: white;
+$cards__header--margin: 0;
+$cards__header--padding: .5em;
+$cards__header--font-size: rem(22);
+$card__copy-font-size: rem(15);
+$card__copy-padding: 0 rem(8) rem(8);
+
+$button__color: $grey;
+
+
+$main-nav__background-color: $theme__color;
+$main-nav__color: white;
+$main-nav__font-size: rem(18.5);
+$main-nav__padding: .75em 1em;
+
+$footer__color: $grey;
+$footer__background-color: $dark-grey;
+$footer-nav__color: $footer__color;
+$footer-nav__color-hover: white;
+
+$card-nav__color: $body__link-color;
+$card-nav__color-hover: $body__link-color-hover;
+
+$block__margin: 0 0 $space*2 0;
+
+$side-block__font_color: $white;
+$side-block__padding: $space;
+$side-block__margin: $block__margin;
+$side-block__heading_color: $white;
+
+/* Font Properties */
+$font__size-large: 1.5em;
+$heading__h2-font-size: em(35);
+$heading__h2-font-size-mobile: em(28);
+$heading__h2-font-size-tablet: rem(30);
+$heading__font-color: $theme__color;
+$heading__h4-font-size: 1.5em;
+
